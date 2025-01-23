@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #8476e3;
+    --secondary-color: #212832;
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -12,4 +17,119 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
+}
+
+/* Common */
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(1170px - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --height: 58px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 149px;
+    height: var(--height);
+    border-radius: 6px;
+    background: var(--secondary-color);
+    line-height: var(--height);
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    padding: 42px 0 26px;
+}
+
+.fixed {
+    position: sticky;
+    top: -26px;
+    z-index: 99;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    margin-left: 52.32px;
+}
+
+.navbar__link {
+    padding: 8px 23.5px;
+    color: #696d76;
+    line-height: 1.75;
+}
+
+.navbar__link:hover {
+    color: var(--secondary-color);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link.navbar__link--active {
+    position: relative;
+    color: var(--secondary-color);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link.navbar__link--active::after {
+    position: absolute;
+    left: 23.5px;
+    bottom: 5px;
+    content: "";
+    width: calc(100% - 47px);
+    height: 1px;
+    border-radius: 0.5px;
+    background: #7264d6;
+}
+
+.header-action {
+    margin-left: auto;
+}
+
+.header-action__link {
+    color: var(--secondary-color);
+    font-weight: 600;
+    line-height: 1.75;
+    margin-right: 28px;
+}
+
+.header-action__link:hover {
+    text-decoration: underline;
+}
+
+.header-action__btn {
+    --height: 52px;
+
+    min-width: 113px;
 }
