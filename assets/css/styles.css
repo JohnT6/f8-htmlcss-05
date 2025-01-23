@@ -57,6 +57,31 @@ a {
     opacity: 0.9;
 }
 
+.section-title {
+    position: relative;
+    color: #696d77;
+    font-family: "Open Sans";
+    line-height: 1.75;
+    padding-left: 30px;
+}
+
+.section-title::before {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.section-heading {
+    color: var(--secondary-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
 /* Header */
 .header {
     padding: 42px 0 26px;
@@ -489,4 +514,123 @@ a {
     font-size: 0.8rem;
     line-height: 1;
     margin-top: 5px;
+}
+
+/* Work */
+
+.work {
+    margin-top: 60px;
+    padding: 50px 0;
+}
+
+.work__inner {
+    display: flex;
+    align-items: center;
+}
+
+.work-media {
+    position: relative;
+    width: 48.7%;
+}
+
+.work-content {
+    margin-left: 130px;
+    flex: 1;
+}
+
+.work-media__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 456px;
+    height: 619px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.work-media__img-wrap {
+    position: relative;
+    width: 470px;
+    height: 619px;
+}
+
+.work-media__img-wrap::before {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: "";
+    background-image: url(../img/work-bg.png);
+    width: 100%;
+    height: 550px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.work-media__card {
+    position: absolute;
+    top: 76px;
+    right: 162px;
+}
+
+.work-congratulations {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 96px;
+    display: flex;
+    align-items: center;
+    width: 226px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.work-congratulations__wrap {
+    margin-left: 10px;
+}
+
+.work-congratulations__title {
+    color: #212832;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.work-congratulations__text {
+    margin-top: 5px;
+    color: #696d76;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.work-content__heading {
+    width: 294px;
+    margin-top: 12px;
+}
+
+.work__list {
+    padding-top: 40px;
+}
+
+.work-item {
+    margin-top: 30px;
+}
+
+.work-item__title {
+    width: 470px;
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.46;
+}
+
+.work-item__desc {
+    margin-top: 16px;
+    width: 470px;
+    color: #696d76;
+    line-height: 1.75;
 }
