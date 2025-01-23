@@ -82,6 +82,38 @@ a {
     line-height: 1.25;
 }
 
+.section-desc {
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.section-list {
+    margin-top: 28px;
+}
+
+.section-item {
+    position: relative;
+    margin-top: 18px;
+    padding-left: 24px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.section-item::before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    content: "";
+    background-color: #7264d6;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
 /* Header */
 .header {
     padding: 42px 0 26px;
@@ -633,4 +665,202 @@ a {
     width: 470px;
     color: #696d76;
     line-height: 1.75;
+}
+
+/* Product */
+.product {
+    margin-top: 60px;
+    padding-top: 50px;
+}
+
+.product__inner {
+    display: flex;
+}
+
+.product-content {
+    width: 40.2%;
+}
+
+.product-right {
+    position: relative;
+    flex: 1;
+    margin-left: 130px;
+    padding-top: 86px;
+}
+
+.product-content__heading {
+    margin-top: 12px;
+    width: 470px;
+}
+
+.product-content__desc {
+    margin-top: 20px;
+    width: 470px;
+}
+
+.product-content__btn {
+    margin-top: 38px;
+}
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+    padding: 38px;
+    width: 482px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.product-card__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-card__row-left {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card__main-balance {
+    display: inline-block;
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: normal;
+}
+
+.product-card__balance {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.product-card__bottom {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 114px 196px;
+    margin-top: 98px;
+    gap: 4px 26px;
+}
+
+.product-holder-valid-thur {
+    color: #fff;
+    font-size: 2rem;
+    line-height: normal;
+}
+
+.product-card__name {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.product-card__date {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.product-card-decor-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.product-card-decor-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.product-send-money {
+    position: absolute;
+    top: 38px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 23px 13px;
+    width: 276px;
+    border-radius: 12px;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+    background: #fff;
+}
+
+.product-send-money__icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.product-info {
+    margin-left: 14px;
+}
+
+.product-info__title {
+    color: var(--secondary-color);
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.product-info__info {
+    margin-top: 4px;
+    color: #696d76;
+    font-family: Inter;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+.product-money-date {
+    margin-left: auto;
+}
+
+.product-money-date__money {
+    color: var(--secondary-color);
+    font-family: Inter;
+    line-height: normal;
+}
+
+.product-money-date__date {
+    margin-top: 3px;
+    color: #696d76;
+    font-family: Inter;
+    font-size: 1rem;
+    line-height: normal;
+    text-align: right;
+}
+
+.product-income {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    width: 120px;
+    padding: 15px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.product-income__label {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.product-income__money {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
 }
