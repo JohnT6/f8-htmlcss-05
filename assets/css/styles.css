@@ -34,7 +34,7 @@ a {
 
 .container {
     width: 1170px;
-    max-width: calc(1170px - 48px);
+    max-width: calc(100% - 48px);
     margin: 0 auto;
 }
 
@@ -60,6 +60,7 @@ a {
 /* Header */
 .header {
     padding: 42px 0 26px;
+    background-color: #fff;
 }
 
 .fixed {
@@ -132,4 +133,360 @@ a {
     --height: 52px;
 
     min-width: 113px;
+}
+
+/* Hero */
+.hero {
+    padding: 50px 0;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+}
+
+.hero__info {
+    width: 46, 2%;
+}
+
+.hero__media {
+    position: relative;
+    flex: 1;
+    margin-left: 60px;
+}
+
+.hero__info-title {
+    position: relative;
+    color: #696d77;
+    line-height: 1.75;
+    padding-left: 30px;
+}
+
+.hero__info-title::before {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    flex-shrink: 0;
+}
+
+.hero__info-heading {
+    margin-top: 12px;
+    width: 500px;
+    color: var(--secondary-color);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+.hero__info-heading-highlight {
+    color: #7264d6;
+}
+
+.hero__info-desc {
+    margin-top: 20px;
+    width: 540px;
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.hero__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+    background: #fff;
+    padding-right: 8px;
+}
+
+.hero__form-input {
+    width: 100%;
+    height: 100%;
+    padding: 23px;
+    border-radius: 8px;
+    color: #696d76;
+    border: none;
+    outline: none;
+}
+
+.hero__form-input::placeholder {
+    color: #696d76;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.hero__form-submit {
+    --height: 58px;
+
+    min-width: 149px;
+    height: var(--height);
+    border-radius: 8px;
+    background: #7264d6;
+    line-height: var(--height);
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.75;
+    border: none;
+}
+
+.hero__form-submit:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.hero__form-note {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+.hero-phone {
+    position: relative;
+    margin-left: 100px;
+    width: 296px;
+    padding: 40px 11px 30px;
+    border-radius: 40px;
+    border: 12px solid #212832;
+    background: #fff;
+}
+
+.hero-phone::before {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 144px;
+    height: 36px;
+    border-radius: 0px 0px 18px 18px;
+    background: #3c2f60;
+}
+
+.hero-card {
+    position: relative;
+    overflow: hidden;
+    padding: 16px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.hero-card__row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-card__main-balance {
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.hero-card__balance {
+    margin-top: 2px;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero-card__bottom {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 57px 107px;
+    margin-top: 32px;
+    gap: 5px 12px;
+}
+
+.hero-holder-valid-thur {
+    color: #fff;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+.hero-card__date {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-card__name {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-card__decor-top {
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+
+.hero-card__decor-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-phone__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.hero-phone__title {
+    color: #31456a;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-item {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.hero-item__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.hero-info-wrap {
+    margin-left: 14px;
+}
+
+.hero-info__title {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-info__info {
+    margin-top: 6px;
+    color: #696d76;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.hero-money-date {
+    margin-left: auto;
+}
+
+.hero-money-date__money {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-money-date__date {
+    margin-top: 6px;
+    color: #696d76;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: right;
+}
+
+.hero-deposit {
+    position: absolute;
+    top: 113px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    width: 174px;
+    border-radius: 6px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+    background: #fff;
+}
+
+.hero-deposit__title {
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 8px;
+}
+
+.hero-deposit__money {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    line-height: 1;
+    margin-left: auto;
+}
+
+.hero-interest {
+    position: absolute;
+    top: 127px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #da6464;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.hero-interest__deg {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-interest__label {
+    color: #fff;
+}
+
+.hero-secured-funds {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 61px;
+    right: 100px;
+    width: 124px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.hero-secured-funds__info-wrap {
+    margin-left: 11px;
+}
+
+.hero-secured-funds__info-money {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-secured-funds__info-text {
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1;
+    margin-top: 5px;
 }
