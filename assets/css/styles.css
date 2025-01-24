@@ -1199,3 +1199,94 @@ a {
 .blog-item__content-more:hover {
     text-decoration: underline;
 }
+
+/* App */
+.app {
+    margin-top: 60px;
+    padding: 50px 0;
+}
+
+.app__inner {
+    position: relative;
+    width: 1170px;
+    border-radius: 24px;
+    padding: 100px 112px;
+    background: #7264d6;
+    text-align: center;
+}
+
+.app-title {
+    position: relative;
+    padding-left: 30px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1.75;
+}
+
+.app-title::before {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: #fff;
+}
+
+.app-heading {
+    margin: 12px auto 0;
+    width: 402px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.app-desc {
+    margin: 18px auto 0;
+    width: 435px;
+    color: #fff;
+    line-height: 1.75;
+}
+
+.app__btn-download {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.app-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 182px;
+    height: 64px;
+    border-radius: 6px;
+}
+
+.app-star-decor {
+    position: absolute;
+   
+}
+
+.app-star-decor:nth-child(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.app-star-decor:nth-child(2) {
+    top: 49px;
+    right: 112px;
+}
+
+.app-star-decor:nth-child(3) {
+    bottom: 49px;
+    left: 166px;
+}
+.app-star-decor:nth-child(4) {
+    bottom: 49px;
+    right: 166px;
+}
