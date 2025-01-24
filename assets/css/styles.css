@@ -1271,24 +1271,51 @@ a {
     position: absolute;
 }
 
+@keyframes moveAndRotate-left-to-right {
+    0% {
+        transform: translateX(-100px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(50px) rotate(180deg);
+    }
+    100% {
+        transform: translateX(-100px) rotate(360deg);
+    }
+}
+
+@keyframes moveAndRotate-right-to-left {
+    0% {
+        transform: translateX(100px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-50px) rotate(180deg);
+    }
+    100% {
+        transform: translateX(100px) rotate(360deg);
+    }
+}
 .app-star-decor:nth-child(1) {
     top: 49px;
     left: 112px;
+    animation: moveAndRotate-left-to-right 5s infinite ease-in-out;
 }
 
 .app-star-decor:nth-child(2) {
     top: 49px;
     right: 112px;
+    animation: moveAndRotate-right-to-left 5s infinite ease-in-out;
 }
 
 .app-star-decor:nth-child(3) {
     bottom: 49px;
     left: 166px;
+    animation: moveAndRotate-left-to-right 5s infinite ease-in-out;
 }
 
 .app-star-decor:nth-child(4) {
     bottom: 49px;
     right: 166px;
+    animation: moveAndRotate-right-to-left 5s infinite ease-in-out;
 }
 
 /* Footer */
