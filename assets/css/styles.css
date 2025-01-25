@@ -119,9 +119,11 @@ a {
 .header {
     padding: 42px 0 26px;
     background-color: #fff;
+    box-shadow: -3px -14px 7px 10px #0a142f;
 }
 
 .fixed {
+    position: -webkit-sticky;
     position: sticky;
     top: -26px;
     z-index: 99;
@@ -1265,6 +1267,10 @@ a {
     width: 182px;
     height: 64px;
     border-radius: 6px;
+}
+
+.app-btn:hover {
+    opacity: 0.8;
 }
 
 .app-star-decor {
